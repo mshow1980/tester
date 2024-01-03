@@ -1,10 +1,10 @@
-pipeline {
+pipeline{
     agent any 
-    stages {
-        stage("sonar quality chech"){
+    stages{
+        stage("sonar quality check"){
             agent {
-                docker {
-                    image 'openjdk:11'
+                docker{
+                    image 'openjdk:11'  
                 }
             }
             steps{
